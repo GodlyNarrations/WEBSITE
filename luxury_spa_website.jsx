@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Cozy Corner Cafe - fresh coffee, comforting brunch, and a warm inviting atmosphere in Melbourne."
+  />
   <title>Cozy Corner Cafe</title>
+
   <style>
     :root {
       --bg: #f7f1ea;
@@ -38,8 +43,10 @@
     }
 
     header {
-      background: linear-gradient(rgba(47, 36, 29, 0.58), rgba(47, 36, 29, 0.58)),
-        url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background:
+        linear-gradient(rgba(47, 36, 29, 0.58), rgba(47, 36, 29, 0.58)),
+        url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
       min-height: 100vh;
       color: white;
       display: flex;
@@ -131,7 +138,7 @@
     }
 
     .btn-secondary {
-      border: 2px solid rgba(255,255,255,0.75);
+      border: 2px solid rgba(255, 255, 255, 0.75);
       color: white;
     }
 
@@ -168,7 +175,7 @@
       height: 420px;
       object-fit: cover;
       border-radius: 22px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     }
 
     .story-card {
@@ -176,7 +183,7 @@
       padding: 2rem;
       border: 1px solid var(--line);
       border-radius: 22px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
     }
 
     .story-card h3 {
@@ -198,7 +205,7 @@
       border: 1px solid var(--line);
       border-radius: 20px;
       padding: 1.4rem;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
     }
 
     .card h3 {
@@ -242,7 +249,7 @@
       border: 1px solid var(--line);
       border-radius: 22px;
       padding: 2rem;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
     }
 
     .hours-list {
@@ -255,6 +262,7 @@
       justify-content: space-between;
       padding: 0.7rem 0;
       border-bottom: 1px solid var(--line);
+      gap: 1rem;
     }
 
     form {
@@ -285,6 +293,10 @@
       padding: 0.95rem 1.2rem;
       border-radius: 999px;
       font-weight: 700;
+    }
+
+    button:hover {
+      opacity: 0.95;
     }
 
     footer {
@@ -321,6 +333,21 @@
         height: 320px;
       }
     }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hours-list li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
@@ -341,8 +368,8 @@
         <div class="hero-content">
           <h1>Your warm little escape in the heart of the city.</h1>
           <p>
-            Fresh coffee, flaky pastries, comforting brunch, and a relaxed atmosphere designed for slow mornings,
-            catch-ups, and quiet afternoons.
+            Fresh coffee, flaky pastries, comforting brunch, and a relaxed atmosphere designed
+            for slow mornings, catch-ups, and quiet afternoons.
           </p>
           <div class="hero-buttons">
             <a href="#menu" class="btn btn-primary">View Menu</a>
@@ -359,23 +386,27 @@
         <div class="section-title">
           <h2>Made for comfort, coffee, and conversation</h2>
           <p>
-            Cozy Corner Cafe blends handcrafted drinks, locally sourced ingredients, and a welcoming interior with soft lighting,
-            natural textures, and a calm neighborhood feel.
+            Cozy Corner Cafe blends handcrafted drinks, locally sourced ingredients, and a
+            welcoming interior with soft lighting, natural textures, and a calm neighborhood feel.
           </p>
         </div>
 
         <div class="story">
-          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80" alt="Cozy cafe interior" />
+          <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80"
+            alt="Cozy cafe interior"
+          />
           <div class="story-card">
             <h3>A cafe that feels like home</h3>
             <p>
-              From the moment guests walk in, they’re welcomed by the aroma of freshly ground coffee, warm baked goods,
-              and a thoughtfully designed space filled with timber tones, plants, and comfortable seating.
+              From the moment guests walk in, they are welcomed by the aroma of freshly ground
+              coffee, warm baked goods, and a thoughtfully designed space filled with timber tones,
+              plants, and comfortable seating.
             </p>
             <br />
             <p>
-              Whether someone is grabbing a quick flat white, settling in with a book, or meeting friends for brunch,
-              the goal is simple: make every visit feel easy, warm, and memorable.
+              Whether someone is grabbing a quick flat white, settling in with a book, or meeting
+              friends for brunch, the goal is simple: make every visit feel easy, warm, and memorable.
             </p>
           </div>
         </div>
@@ -387,7 +418,8 @@
         <div class="section-title">
           <h2>Signature favourites</h2>
           <p>
-            A carefully curated menu featuring rich coffee, seasonal brunch plates, and sweet treats baked fresh each day.
+            A carefully curated menu featuring rich coffee, seasonal brunch plates, and sweet treats
+            baked fresh each day.
           </p>
         </div>
 
@@ -431,7 +463,8 @@
         <div class="section-title">
           <h2>Why locals love us</h2>
           <p>
-            Every detail is designed to create a polished cafe brand that feels friendly, stylish, and genuinely inviting.
+            Every detail is designed to create a polished cafe brand that feels friendly, stylish,
+            and genuinely inviting.
           </p>
         </div>
 
@@ -465,13 +498,15 @@
           <div class="card review">
             <h3>Emily R.</h3>
             <p>
-              Beautiful little cafe with the best flat white I’ve had in ages. It feels calm, polished, and super inviting.
+              Beautiful little cafe with the best flat white I have had in ages. It feels calm,
+              polished, and super inviting.
             </p>
           </div>
           <div class="card review">
             <h3>Jordan M.</h3>
             <p>
-              The brunch menu is unreal. Great portions, lovely staff, and the whole space has that warm cozy energy.
+              The brunch menu is unreal. Great portions, lovely staff, and the whole space has that
+              warm cozy energy.
             </p>
           </div>
           <div class="card review">
@@ -506,11 +541,11 @@
             <p><strong>Email:</strong> hello@cozycornercafe.com</p>
           </div>
 
-          <form>
+          <form id="contactForm">
             <h3>Send a message</h3>
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Email address" required />
-            <textarea placeholder="Tell us about your booking or enquiry"></textarea>
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email address" required />
+            <textarea name="message" placeholder="Tell us about your booking or enquiry" required></textarea>
             <button type="submit">Send Enquiry</button>
           </form>
         </div>
@@ -521,7 +556,17 @@
   <footer>
     <p><strong>Cozy Corner Cafe</strong></p>
     <p>Fresh coffee, warm service, and a space worth lingering in.</p>
-    <p>© 2026 Cozy Corner Cafe. All rights reserved.</p>
+    <p>&copy; 2026 Cozy Corner Cafe. All rights reserved.</p>
   </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thanks for your enquiry! This demo form works on GitHub Pages, but to receive real messages you will need Formspree or another backend service.");
+      form.reset();
+    });
+  </script>
 </body>
 </html>
